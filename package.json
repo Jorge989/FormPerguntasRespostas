@@ -1,0 +1,22 @@
+{
+  "name": "guiaperguntas",
+  "version": "1.0.0",
+  "description": "Uma plataforma de perguntas e respostas ao estilo Yahoo respostas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon server.js"
+  },
+  "author": "Jorge Attie",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dev": "nodemon index.js"
+}
