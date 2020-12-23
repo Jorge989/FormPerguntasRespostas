@@ -79,6 +79,8 @@ app.post("/responder", (req, res) => {
     res.redirect("/pergunta/"+ perguntaId); // res.redirect/pergunta3
   })
 }); 
-app.listen(8080, () => {
-  console.log("Aoo rodando!");
-});
+
+app.listen(process.env.PORT || 8080, () => {
+  console.log('Aoo rodando !!')
+})
+
