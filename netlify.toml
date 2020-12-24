@@ -1,0 +1,12 @@
+  
+[build]
+    base = "/"
+    publish = "build/"
+[build.environment]
+    NODE_OPTION = "--max_old_space_size=4096"
+[context.master]
+    command = "npm run build"
+[[redirects]]
+    from="/*"
+    to="/index.html"
+    status = 200

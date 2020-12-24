@@ -68,7 +68,7 @@ app.get("/pergunta/:id",(req, res) =>{
   })
 });
 
-app.post("/responder", (req, res) => {
+app.post("/", (req, res) => {
   var corpo =req.body.corpo;
   var perguntaId = req.body.pergunta;
   Resposta.create({
@@ -79,8 +79,6 @@ app.post("/responder", (req, res) => {
     res.redirect("/pergunta/"+ perguntaId); // res.redirect/pergunta3
   })
 }); 
-
 app.listen(process.env.PORT || 8080, () => {
   console.log('Aoo rodando !!')
 })
-
